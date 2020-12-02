@@ -1,11 +1,128 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" class="page">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Путешествие по Европе</title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
-<body>
+<body class="page__body">
+<header class="page__header header container">
+  <a class="header__logo">
+    <img class="header__logo-img" src="./img/icon-logo.svg" alt="Логотип">
+  </a>
+  <nav class="header__nav nav">
+    <button class="nav__toggle toggle" type="button">
+      <span class="visually-hidden">Открыть/закрыть меню</span>
+    </button>
+    <ul class="nav__list">
+      <li class="nav__item">
+        <a href="#">О путешествии</a>
+      </li>
+      <!--      Убрать заглушку-->
+      <li class="nav__item">
+        <a href="#">Цены</a>
+      </li>
+    </ul>
+  </nav>
+  <a class="header__tel tel" href="tel:+749978468446">+7 (499) -784-684-46</a>
+</header>
+<main class="page__main main">
+  <article class="main__promo promo">
+    <h1 class="promo__heading">Путешествие по Европе</h1>
+    <p>В этом туре вы откроете для себя Европу в новом свете.
+      Вас ждет: море, горы, а также потрясающая красота
+      природы.</p>
+    <a href="#">смотреть тур</a>
+  </article>
+  <section class="main__places places">
+    <h2 class="places__heading">Места посещения</h2>
+    <p class="places__desc">Вы можете выбрать полный тур или частичный, с посещением первых 3 мест</p>
+    <ul class="places__list">
+      <li class="places__item">
+        <a href="" class="places__link">
+          <img src="./" alt="" class="places__img">
+          <span class="places__text">Греция</span>
+        </a>
+      </li>
+      <li class="places__item">
+        <a href="" class="places__link">
+          <img src="" alt="" class="places__img">
+          <span class="places__text">Албания</span>
+        </a>
+      </li>
+      <li class="places__item">
+        <a href="" class="places__link">
+          <img src="" alt="" class="places__img">
+          <span class="places__text">Македония</span>
+        </a>
+      </li>
+      <li class="places__item">
+        <a href="" class="places__link">
+          <img src="" alt="" class="places__img">
+          <span class="places__text">Черногория</span>
+        </a>
+      </li>
+      <li class="places__item">
+        <a href="" class="places__link">
+          <img src="" alt="" class="places__img">
+          <span class="places__text">Хорватия</span>
+        </a>
+      </li>
+    </ul>
+
+    <div class="places__tabs tabs">
+      <ul class="tabs__list">
+        <li class="tabs__item"><a href="#greece">Греция</a></li>
+        <li class="tabs__item"><a href="#albania">Албания</a></li>
+        <li class="tabs__item"><a href="">Македония</a></li>
+        <li class="tabs__item"><a href="">Черногория</a></li>
+        <li class="tabs__item"><a href="">Хорватия</a></li>
+      </ul>
+      <div class="tabs__block" id="greece">
+        <h3 class="tabs__heading">Греция</h3>
+        <p class="tabs__text">На севере Греции находится один из крупнейших комплексов монастырей, расположенных на вершинах скал.
+          Название его «Метеора» буквально переводится как «висящие в воздухе».
+          Этот монастырь основная цель нашего путешествия в Греции.
+          После покарения скал из песчанника и обломочной горной породы, достигающих в высоту 600 метров,
+          наградой будет неописуемая красота природы и атмосфера, царящая в монастырях Метеоры. </p>
+        <a class="tabs__btn btn" href="#">купить тур сейчас</a>
+        <img class="tabs__img" src="./img/greece-big.jpg" alt="Скала с небольшими постройками сверху">
+        <blockquote class="tabs__comment">
+
+        </blockquote>
+      </div>
+      <div class="tabs__block" id="albania">
+        <h3 class="tabs__heading"></h3>
+        <p class="tabs__text"></p>
+        <a class="tabs__btn btn" href=""></a>
+        <img class="tabs__img" src="" alt="">
+        <blockquote class="tabs__comment"></blockquote>
+      </div>
+      <!--Доделать-->
+    </div>
+  </section>
+  <section class="main__price price">
+    <h2 class="price__heading"></h2>
+    <p class="price__text"></p>
+    <p class="price__contact"></p>
+    <a href="" class="price__tel tel tel--price"></a>
+    <ul class="price__tariff-list">
+      <li class="price__tariff-item tariff">
+        <h3 class="tariff__heading"></h3>
+        <p class="tariff__desc"></p>
+        <ul class="tariff__features-list">
+          <li class="tariff__features__item"></li>
+          <li class="tariff__features__item"></li>
+          <li class="tariff__features__item"></li>
+          <li class="tariff__features__item"></li>
+        </ul>
+        <a class="tariff__btn btn" href="#"></a>
+      </li>
+      <li class="price__tariff-item"></li>
+    </ul>
+  </section>
+</main>
+<footer class="page__footer"></footer>
 </body>
 </html>
