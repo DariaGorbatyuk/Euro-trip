@@ -2,19 +2,26 @@
   display: none;
 
   @media (max-width: $m-end) {
-    display: block;
-    @include size(72px, 50px);
-    padding: 10px 21px;
-    background-color: $accent;
-    border: 0;
 
-    &::before{
-      @include pseudo();
-      @include size(22px, 1px);
-      background-color: $white;
-      box-shadow: 0 7px $white, 0 13px $white;
-      top: 17px;
-      right: 25px;
+    .header--closed & {
+      display: block;
+      @include size(72px, 50px);
+      padding: 10px 21px;
+      background-color: $accent;
+      border: 0;
+
+      &::before {
+        @include pseudo();
+        @include size(22px, 1px);
+        background-color: $white;
+        box-shadow: 0 7px $white, 0 13px $white;
+        top: 17px;
+        right: 25px;
+      }
+    }
+
+    .header--no-js & {
+      display: none;
     }
   }
 }

@@ -8,6 +8,7 @@
   display: flex;
   padding-left: 55px;
   text-decoration: underline;
+  width: 303px;
 
   &::before {
     @include pseudo($pos: static);
