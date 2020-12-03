@@ -1,0 +1,82 @@
+.promo {
+  background-image: url("../img/bh-desk.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: $bheader;
+  color: $white;
+  overflow: hidden;
+  padding-top: 186px;
+  padding-bottom: 294px;
+
+  @media (max-width: $m-end) {
+    background-image: url("../img/bh-tabl.jpg");
+    background-size: cover;
+    padding-top: 60px;
+    padding-bottom: 83px;
+  }
+
+  @media (max-width: $s-end) {
+    background-image: url("../img/bh-m.jpg"), linear-gradient(to bottom, $bheader 237px, $white 100%);
+    background-size: 100% 235px;
+    background-color: white;
+    padding-top: 83px;
+  }
+}
+
+.promo__heading {
+  font-weight: 600;
+  font-size: 55px;
+  line-height: 80px;
+  letter-spacing: -1.10667px;
+  width: 430px;
+  margin: 0 52px 28px auto;
+
+  @media (max-width: $m-end) {
+    width: auto;
+    font-size: 30px;
+    line-height: 150%;
+    margin: 0;
+    letter-spacing: 0;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  @media (max-width: $s-end) {
+    font-size: 24px;
+    line-height: 150%;
+    width: 288px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+  }
+}
+
+.promo__desc {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 27px;
+  letter-spacing: -0.466667px;
+  width: 376px;
+  margin: 0 106px 33px auto;
+
+  @media (max-width: $m-end) {
+    width: 398px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  @media (max-width: $s-end) {
+    width: auto;
+    color: $indigo;
+    margin-bottom: 20px;
+  }
+
+}
+
+.promo__btn {
+  margin-left: auto;
+  margin-right: 141px;
+
+  @media (max-width: $m-end) {
+    margin: 0 auto;
+  }
+
+}
