@@ -1,0 +1,37 @@
+.header {
+  display: flex;
+  padding-top: 40px;
+  box-shadow: 0 4px 20px rgba($black, 0.1);
+
+  @media (max-width: $m-end) {
+    padding-top: 0;
+    justify-content: space-between;
+  }
+}
+
+.header__logo {
+  flex: 0 0 117px;
+  padding-left: 12px;
+
+  @media (max-width: $m-end) {
+    padding: 18px 20px 14px 21px;
+    display: block;
+    flex: 0 0 85px;
+  }
+
+  @media (max-width: $s-end) {
+    padding: 18px 20px 14px 17px
+  }
+}
+
+.header__nav {
+  flex: 0 0 770px;
+
+  @media (max-width: $m-end) {
+    flex: 0 0 auto;
+  }
+}
+
+.header__tel {
+  flex: 0 0 303px;
+}

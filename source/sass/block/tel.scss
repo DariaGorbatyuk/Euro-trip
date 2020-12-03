@@ -1,0 +1,23 @@
+.tel {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+  color: $dark;
+  text-align: right;
+  padding-right: 23px;
+  display: flex;
+  padding-left: 55px;
+  text-decoration: underline;
+
+  &::before {
+    @include pseudo($pos: static);
+    @include square($width: 30px);
+    background-image: url("../img/icon-phone.svg");
+    background-repeat: no-repeat;
+    margin-right: 6px;
+  }
+
+  @media (max-width: $m-end) {
+    display: none;
+  }
+}

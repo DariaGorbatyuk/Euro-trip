@@ -1,0 +1,20 @@
+.page{
+  height: 100%;
+  box-sizing: border-box;
+}
+.page__body{
+  margin: 0 auto;
+  padding: 0;
+  min-height: 100%;
+  min-width: $small;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  font-family: $font;
+  font-weight: normal;
+  font-style: normal;
+  background-color: $white;
+  color: $indigo;
+  font-size: 16px;
+  line-height: 1.2;
+}
+

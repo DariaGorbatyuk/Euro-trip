@@ -7,21 +7,25 @@
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body class="page__body">
-<header class="page__header header container">
+<header class="page__header header container container--header">
   <a class="header__logo">
-    <img class="header__logo-img" src="./img/icon-logo.svg" alt="Логотип">
+    <picture>
+      <source media="(max-width: 1919px)" srcset="./img/icon-logo-tabl.svg">
+      <img class="header__logo-img" src="./img/icon-logo.svg" alt="Логотип" sizes="(max-width: 1919px): 44px, 57px">
+    </picture>
   </a>
-  <nav class="header__nav nav">
+  <nav class="header__nav nav nav--no-js">
+<!--    nav=nav--close; nav--open; nav--no-js-->
     <button class="nav__toggle toggle" type="button">
       <span class="visually-hidden">Открыть/закрыть меню</span>
     </button>
     <ul class="nav__list">
       <li class="nav__item">
-        <a href="#">О путешествии</a>
+        <a class="nav__link" href="#">О путешествии</a>
       </li>
       <!--      Убрать заглушку-->
       <li class="nav__item">
-        <a href="#">Цены</a>
+        <a class="nav__link" href="#">Цены</a>
       </li>
     </ul>
   </nav>
@@ -81,7 +85,8 @@
       </ul>
       <div class="tabs__block" id="greece">
         <h3 class="tabs__heading">Греция</h3>
-        <p class="tabs__text">На севере Греции находится один из крупнейших комплексов монастырей, расположенных на вершинах скал.
+        <p class="tabs__text">На севере Греции находится один из крупнейших комплексов монастырей, расположенных на
+          вершинах скал.
           Название его «Метеора» буквально переводится как «висящие в воздухе».
           Этот монастырь основная цель нашего путешествия в Греции.
           После покарения скал из песчанника и обломочной горной породы, достигающих в высоту 600 метров,
