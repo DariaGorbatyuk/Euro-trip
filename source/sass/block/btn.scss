@@ -31,7 +31,8 @@
   }
 
   @media (max-width: $s-end) {
-    width: 288px;
+    width: 100%;
+    max-width: 288px;
     margin: 0 auto;
   }
 }

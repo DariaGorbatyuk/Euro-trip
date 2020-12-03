@@ -46,11 +46,11 @@
   }
   @media (max-width: $s-end) {
     .header--closed & {
-      @include size($width: 58px, $height: 50px);
+      @include size($width: 50px, $height: 50px);
       padding: 15px 10px;
 
       &::before {
-        right: 21px;
+        right: 14px;
       }
     }
 
