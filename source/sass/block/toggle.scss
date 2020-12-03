@@ -23,6 +23,25 @@
     .header--no-js & {
       display: none;
     }
+    .header--open &{
+      display: block;
+      @include size(50px, 52px);
+      padding: 15px;
+      background-color: $white;
+      box-shadow: none;
+      border: none;
+
+      &::before,
+      &::after{
+        @include pseudo();
+        @include size(22px, 1px);
+        background-color: $light-gray;
+        transform: rotate(45deg);
+      }
+      &::after{
+        transform: rotate(-45deg);
+      }
+    }
   }
 }
 

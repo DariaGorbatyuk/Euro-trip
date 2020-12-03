@@ -1,9 +1,13 @@
 .nav {
-  position: relative;
   width: 770px;
 
   @media (max-width: $m-end) {
     width: 100%;
+
+    .header--open & {
+      position: absolute;
+      background-color: $white;
+    }
   }
 }
 
@@ -19,10 +23,13 @@
 
 
   @media (max-width: $m-end) {
+    padding-top: 84px;
+    padding-bottom: 280px;
+
     .header--no-js & {
       flex-direction: column;
     }
-    .header--closed {
+    .header--closed &{
       display: none;
     }
   }
@@ -41,7 +48,7 @@
     margin-bottom: 30px;
 
     &:last-child {
-      margin-bottom: 280px;
+      margin-bottom: 0;
     }
   }
 }
@@ -64,11 +71,17 @@
     justify-content: space-between;
     align-items: center;
 
-    &::after{
+    &::after {
       @include pseudo($pos: static);
       @include square($width: 25px);
       background-image: url("../img/icon-menu-arrow.svg");
       background-repeat: no-repeat;
     }
+  }
+}
+
+.nav__toggle {
+  @media (max-width: $m-end) {
+    margin-left: auto;
   }
 }

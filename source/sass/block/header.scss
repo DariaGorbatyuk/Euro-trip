@@ -1,4 +1,5 @@
 .header {
+  position: relative;
   display: flex;
   padding-top: 40px;
   padding-bottom: 29px;
@@ -9,6 +10,10 @@
     padding-bottom: 0;
 
     &--no-js {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    &--open {
       flex-direction: column;
       align-items: flex-start;
     }
@@ -25,8 +30,9 @@
     display: block;
     width: 85px;
 
-    .header--no-js & {
-      margin-bottom: 84px;
+    .header--open & {
+      position: relative;
+      z-index: 2;
     }
   }
 
