@@ -124,27 +124,37 @@
       </ul>
     </div>
     <div class="places__tabs tabs">
+<!--      Зачем он мне-->
       <ul class="tabs__list">
-        <li class="tabs__item"><a href="#greece">Греция</a></li>
-        <li class="tabs__item"><a href="#albania">Албания</a></li>
-        <li class="tabs__item"><a href="">Македония</a></li>
-        <li class="tabs__item"><a href="">Черногория</a></li>
-        <li class="tabs__item"><a href="">Хорватия</a></li>
+        <li class="tabs__item"><a class="tabs__link tabs__link--active" href="#greece">Греция</a></li>
+        <li class="tabs__item"><a class="tabs__link" href="#albania">Албания</a></li>
+        <li class="tabs__item"><a class="tabs__link" href="">Македония</a></li>
+        <li class="tabs__item"><a class="tabs__link" href="">Черногория</a></li>
+        <li class="tabs__item"><a class="tabs__link" href="">Хорватия</a></li>
       </ul>
-      <div class="tabs__block" id="greece">
-        <h3 class="tabs__heading">Греция</h3>
-        <p class="tabs__text">На севере Греции находится один из крупнейших комплексов монастырей, расположенных на
+      <article class="tabs__card card" id="greece">
+        <h3 class="card__heading">Греция</h3>
+        <p class="card__text">На севере Греции находится один из крупнейших комплексов монастырей, расположенных на
           вершинах скал.
           Название его «Метеора» буквально переводится как «висящие в воздухе».
           Этот монастырь основная цель нашего путешествия в Греции.
           После покарения скал из песчанника и обломочной горной породы, достигающих в высоту 600 метров,
           наградой будет неописуемая красота природы и атмосфера, царящая в монастырях Метеоры. </p>
-        <a class="tabs__btn btn" href="#">купить тур сейчас</a>
-        <img class="tabs__img" src="./img/greece-big.jpg" alt="Скала с небольшими постройками сверху">
-        <blockquote class="tabs__comment">
-
-        </blockquote>
-      </div>
+        <a class="card__btn btn" href="#">купить тур сейчас</a>
+        <img class="card__img" src="./img/greece-tab-d.jpg" alt="Скала с небольшими постройками сверху" width="430" height="596">
+        <div class="card__comment comment">
+          <h4 class="comment__heading">Отзывы</h4>
+          <blockquote class="comment__content">
+            Метеоры в Греции можно сравнить разве что с Монсерратт в Испании. Такие же высоченные скалы.
+            Но здесь потрясает масштаб. Огромная территория, высоко в горах.
+            Ощущение такое, как будто стоишь на краю света!
+            <div class="comment__layout">
+              <img class="comment__img" src="./img/vlada.jpg" alt="Влада Голицина">
+              <cite>Влада Голицина</cite>
+            </div>
+          </blockquote>
+        </div>
+      </article>
       <div class="tabs__block" id="albania">
         <h3 class="tabs__heading"></h3>
         <p class="tabs__text"></p>
