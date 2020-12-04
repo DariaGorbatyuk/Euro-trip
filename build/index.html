@@ -4,11 +4,34 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Путешествие по Европе</title>
+  <!-- <style>
+     HTML {
+       background-repeat: no-repeat;
+       background-position:  50% 0;
+       /* Mobile layout by default */
+       background-image: url( "img/mobile.jpg" );
+     }
+     /* Tablet */
+     @media ( min-width: 768px ) {
+       HTML {
+         /* Tablet layout */
+         background-image: url( "img/tablet.png" );
+       }
+     }
+     /* Desktop */
+     @media ( min-width: 1920px ) {
+       HTML {
+         /* Desktop layout */
+         background-image: url( "img/desk.jpg" );
+       }
+     }
+   </style>-->
   <link rel="stylesheet" href="css/style.min.css">
+
 </head>
 <body class="page__body">
-<header class="page__header header container container--header header--no-js ">
-<!-- header--no-js; header-closed; header--open -->
+<header class="page__header header container container--header header--closed ">
+  <!-- header--no-js; header-closed; header--open -->
   <a class="header__logo">
     <picture>
       <source media="(max-width: 1919px)" srcset="./img/icon-logo-tabl.svg">
@@ -31,49 +54,75 @@
   <a class="header__tel tel" href="tel:+749978468446">+7 (499) -784-684-46</a>
 </header>
 <main class="page__main main">
-  <article class="main__promo promo">
+  <article class="main__promo promo container">
     <h1 class="promo__heading">Путешествие по Европе</h1>
-    <p>В этом туре вы откроете для себя Европу в новом свете.
+    <p class="promo__desc">В этом туре вы откроете для себя Европу в новом свете.
       Вас ждет: море, горы, а также потрясающая красота
       природы.</p>
-    <a href="#">смотреть тур</a>
+    <a class="promo__btn btn btn--arrow" href="#">смотреть тур</a>
   </article>
-  <section class="main__places places">
-    <h2 class="places__heading">Места посещения</h2>
-    <p class="places__desc">Вы можете выбрать полный тур или частичный, с посещением первых 3 мест</p>
-    <ul class="places__list">
-      <li class="places__item">
-        <a href="" class="places__link">
-          <img src="./" alt="" class="places__img">
-          <span class="places__text">Греция</span>
-        </a>
-      </li>
-      <li class="places__item">
-        <a href="" class="places__link">
-          <img src="" alt="" class="places__img">
-          <span class="places__text">Албания</span>
-        </a>
-      </li>
-      <li class="places__item">
-        <a href="" class="places__link">
-          <img src="" alt="" class="places__img">
-          <span class="places__text">Македония</span>
-        </a>
-      </li>
-      <li class="places__item">
-        <a href="" class="places__link">
-          <img src="" alt="" class="places__img">
-          <span class="places__text">Черногория</span>
-        </a>
-      </li>
-      <li class="places__item">
-        <a href="" class="places__link">
-          <img src="" alt="" class="places__img">
-          <span class="places__text">Хорватия</span>
-        </a>
-      </li>
-    </ul>
-
+  <section class="main__places places container">
+    <div class="places__layout">
+      <h2 class="places__heading">Места посещения</h2>
+      <p class="places__desc">Вы можете выбрать полный тур или<br>частичный, с посещением первых 3 мест</p>
+      <ul class="places__list">
+        <li class="places__item">
+          <a href="" class="places__link">
+            <figure class="places__figure">
+              <picture>
+                <source media="(max-width: 1919px)" srcset="./img/greece-m.jpg">
+                <img src="./img/greece-big.jpg" alt="Скала и горы на заднем фоне" class="places__img" sizes="(max-width: 1919px) 288px, 350px">
+              </picture>
+              <figcaption class="places__text">Греция</figcaption>
+            </figure>
+          </a>
+        </li>
+        <li class="places__item">
+          <a href="" class="places__link">
+            <figure class="places__figure">
+              <picture>
+                <source media="(max-width: 1919px)" srcset="./img/albania-m.jpg">
+                <img src="./img/albania-big.jpg" alt="Песчаный пляж" class="places__img" sizes="(max-width: 1919px) 288px, 350px">
+              </picture>
+              <figcaption class="places__text">Албания</figcaption>
+            </figure>
+          </a>
+        </li>
+        <li class="places__item">
+          <a href="" class="places__link">
+            <figure class="places__figure">
+              <picture>
+                <source media="(max-width: 1919px)" srcset="./img/macedonia-m.jpg">
+                <img src="./img/macedonia-big.jpg" alt="Вид на архитектуру и океан" class="places__img" sizes="(max-width: 1919px) 288px, 350px">
+              </picture>
+              <figcaption class="places__text">Македония</figcaption>
+            </figure>
+          </a>
+        </li>
+        <li class="places__item">
+          <a href="" class="places__link">
+            <figure class="places__figure">
+              <picture>
+                <source media="(max-width: 1919px)" srcset="./img/montenegro-m.jpg">
+                <img src="./img/montenegro-big.jpg" alt="Река с берегами в густой растительности" class="places__img" sizes="(max-width: 1919px) 288px, 350px">
+              </picture>
+              <figcaption class="places__text">Черногория</figcaption>
+            </figure>
+          </a>
+        </li>
+        <li class="places__item places__item--center">
+          <a href="" class="places__link">
+            <figure class="places__figure">
+              <picture>
+                <source media="(max-width: 1919px)" srcset="./img/croatia-m.jpg">
+                <img src="./img/croatia-big.jpg" alt="Озеро в пещере" class="places__img" sizes="(max-width: 1919px) 288px, 350px">
+              </picture>
+              <figcaption class="places__text">Хорватия</figcaption>
+            </figure>
+          </a>
+        </li>
+      </ul>
+    </div>
     <div class="places__tabs tabs">
       <ul class="tabs__list">
         <li class="tabs__item"><a href="#greece">Греция</a></li>
