@@ -1,22 +1,13 @@
-.places {
-
-}
 
 .places__layout {
   padding-top: 202px;
-  padding-left: 12px;
-  padding-right: 12px;
 
   @media (max-width: $m-end) {
-    padding-left: 60px;
-    padding-right: 60px;
     padding-top: 80px;
   }
 
   @media (max-width: $s-end) {
     padding-top: 26px;
-    padding-left: 0;
-    padding-right: 0;
   }
 }
 

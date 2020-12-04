@@ -1,5 +1,16 @@
 .card {
+  background-image: url("../img/map.png");
+  background-repeat: no-repeat;
+  padding-top: 80px;
+  padding-left: 137px;
+  padding-right: 133px;
+  background-size: cover;
+  display: flex;
+}
 
+.card__layout-top {
+  width: 470px;
+  padding-right: 94px;
 }
 
 .card__heading {
@@ -8,6 +19,10 @@
   line-height: 90px;
   letter-spacing: -1.245px;
   color: $indigo;
+  margin-top: 0;
+  padding-bottom: 17px;
+  margin-bottom: 31px;
+  padding-top: 10px;
 }
 
 .card__text {
@@ -16,7 +31,9 @@
   line-height: 28px;
   letter-spacing: -0.466667px;
   color: rgba($dark-gray, 0.7);
-  width: 370px;
+  margin-top: 0;
+  margin-bottom: 49px;
+
 }
 
 .card__btn {
@@ -27,10 +44,15 @@
   color: $white;
   width: 250px;
   padding: 30px 39px;
+
+}
+
+.card__layout-bottom {
+  padding-right: 269px;
+  position: relative;
 }
 
 .card__img {
-
 }
 
 .card__comment {

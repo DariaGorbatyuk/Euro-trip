@@ -1,5 +1,5 @@
 .tabs {
-  padding-left: 13px;
+
 }
 
 .tabs__list {
@@ -11,6 +11,7 @@
   width: 902px;
   position: relative;
   padding-bottom: 15px;
+  margin-left: 137px;
 
   &::after {
     @include pseudo();

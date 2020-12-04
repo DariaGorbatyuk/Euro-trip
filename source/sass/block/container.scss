@@ -1,4 +1,4 @@
-.container{
+.container {
   max-width: $large;
   min-width: $small;
   width: $large;
@@ -6,11 +6,21 @@
   padding-right: 363px;
   padding-left: 363px;
 
-  @media (max-width: $m-end)  {
+  &--places {
+    padding-right: 375px;
+    padding-left: 375px;
+  }
+
+  &--tabs{
+    padding-left: 238px;
+    padding-right: 238px;
+  }
+
+  @media (max-width: $m-end) {
     width: 100%;
     padding: 0 20px;
 
-    &--header{
+    &--header {
       padding: 0;
     }
   }
@@ -18,7 +28,7 @@
   @media (max-width: $s-end) {
     padding: 0 15px;
 
-    &--header{
+    &--header {
       padding: 0;
     }
   }
