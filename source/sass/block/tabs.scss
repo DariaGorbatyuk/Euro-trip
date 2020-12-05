@@ -11,7 +11,6 @@
   width: 902px;
   position: relative;
   padding-bottom: 15px;
-  margin-left: 137px;
 
   &::after {
     @include pseudo();
@@ -19,6 +18,12 @@
     background-color: rgba($dark-gray, 0.3);
     bottom: 0;
     left: 0;
+  }
+
+  @media (max-width: $m-end) {
+    width: calc(100% - 37px);
+    margin-left: 37px;
+
   }
 }
 
@@ -28,6 +33,15 @@
 
   &:last-child {
     margin-right: 0;
+  }
+
+  @media (max-width: $m-end) {
+    &:nth-child(4) {
+      margin-right: 0;
+    }
+    &:nth-child(5) {
+      display: none;
+    }
   }
 }
 

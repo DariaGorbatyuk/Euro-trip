@@ -2,15 +2,24 @@
   background-image: url("../img/map.png");
   background-repeat: no-repeat;
   padding-top: 80px;
-  padding-left: 137px;
-  padding-right: 133px;
   background-size: cover;
   display: flex;
+
+  @media (max-width: $m-end) {
+    display: block;
+    background: none;
+    padding-top: 33px;
+  }
 }
 
 .card__layout-top {
   width: 470px;
   padding-right: 94px;
+  @media (max-width: $m-end) {
+    width: auto;
+    padding: 0;
+    margin-bottom: 30px;
+  }
 }
 
 .card__heading {
@@ -23,6 +32,16 @@
   padding-bottom: 17px;
   margin-bottom: 31px;
   padding-top: 10px;
+
+  @media (max-width: $m-end) {
+    font-size: 30px;
+    line-height: 45px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 21px;
+  }
 }
 
 .card__text {
@@ -34,6 +53,11 @@
   margin-top: 0;
   margin-bottom: 49px;
 
+  @media (max-width: $m-end) {
+    text-align: center;
+    margin-bottom: 19px;
+    padding: 0 20px;
+  }
 }
 
 .card__btn {
@@ -45,14 +69,28 @@
   width: 250px;
   padding: 30px 39px;
 
+  @media (max-width: $m-end) {
+    margin: 0 auto;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 2px;
+    padding: 19px 51px;
+  }
 }
 
 .card__layout-bottom {
   padding-right: 269px;
   position: relative;
+
+  @media (max-width: $m-end) {
+    padding-right: 0;
+  }
 }
 
 .card__img {
+  @media (max-width: $m-end) {
+    width: 100%;
+  }
 }
 
 .card__comment {
