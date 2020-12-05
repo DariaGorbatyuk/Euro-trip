@@ -19,11 +19,16 @@
     bottom: 0;
     left: 0;
   }
-
+  //переделать
   @media (max-width: $m-end) {
     width: calc(100% - 37px);
     margin-left: 37px;
-
+    justify-content: space-between;
+  }
+  @media (max-width: $s-end){
+    margin-left: 15px;
+    width: calc(100% - 15px);
+    padding-right: 41px;
   }
 }
 
@@ -36,10 +41,14 @@
   }
 
   @media (max-width: $m-end) {
-    &:nth-child(4) {
-      margin-right: 0;
+    margin-right: 0;
+
+    &:nth-child(n+5) {
+      display: none;
     }
-    &:nth-child(5) {
+  }
+  @media (max-width: $s-end) {
+    &:nth-child(n+3) {
       display: none;
     }
   }
@@ -55,4 +64,6 @@
   &--active {
     color: $salmon;
   }
+
+
 }

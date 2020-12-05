@@ -1,5 +1,6 @@
 .comment {
   position: absolute;
+  z-index: 2;
   width: 382px;
   background-color: $white;
   top: 112px;
@@ -12,6 +13,11 @@
     margin: auto;
     top: 80px;
   }
+  @media (max-width: $s-end) {
+    width: 268px;
+    top: 50px;
+    padding: 32px 20px;
+  }
 }
 
 .comment__heading {
@@ -23,6 +29,12 @@
   margin-top: 0;
   padding-bottom: 13px;
   margin-bottom: 21px;
+
+  @media (max-width: $s-end) {
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+  }
 }
 
 .comment__content {
@@ -32,6 +44,10 @@
   letter-spacing: -0.408333px;
   color: rgba($dark-gray, 0.7);
   margin: 0;
+
+  @media (max-width: $s-end) {
+    text-align: center;
+  }
 }
 
 .comment__layout {
@@ -40,11 +56,20 @@
   align-items: center;
   margin-top: 30px;
 
+  @media (max-width: $s-end) {
+    flex-direction: column;
+    margin-top: 15px;
+    align-items: center;
+  }
 }
 
 .comment__img {
   border-radius: 50%;
   margin-right: 16px;
+  @media (max-width: $s-end){
+    margin-right: 0;
+    margin-bottom: 12px;
+  }
 }
 
 .comment__author {
