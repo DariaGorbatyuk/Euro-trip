@@ -7,14 +7,10 @@
   padding-left: 363px;
 
   &--places,
-  &--card{
+  &--card,
+  &--tabs{
     padding-right: 375px;
     padding-left: 375px;
-  }
-
-  &--tabs{
-    padding-left: 238px;
-    padding-right: 238px;
   }
 
   @media (max-width: $m-end) {
@@ -27,6 +23,10 @@
     &--card{
       padding: 0;
     }
+    &--tabs{
+      padding-left: 37px;
+      padding-right: 0;
+    }
   }
 
   @media (max-width: $s-end) {
@@ -37,6 +37,10 @@
     }
     &--card{
       padding: 0;
+    }
+    &--tabs{
+      padding-left: 15px;
+      padding-right: 0;
     }
   }
 }
