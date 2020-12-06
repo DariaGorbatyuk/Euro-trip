@@ -1,0 +1,41 @@
+.success {
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+  background-color: rgba($white, 0.9);
+}
+
+.success__box {
+  width: 728px;
+  background-color: $light;
+  display: flex;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 20vh;
+  min-height: 444px;
+
+  @media (max-width: $m-end){
+    width: 100%;
+  }
+}
+
+.success__btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.success__text {
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 170%;
+  text-align: center;
+  color: $graphite;
+  margin: auto;
+}

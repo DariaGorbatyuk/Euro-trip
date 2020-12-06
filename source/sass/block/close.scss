@@ -1,0 +1,21 @@
+.close{
+  @include square($width: 22px);
+  background-color: transparent;
+  position: absolute;
+  border: 0;
+  padding: 0;
+
+  &::after,
+  &::before{
+    @include pseudo();
+    @include size($width: 22px, $height: 1px);
+    background-color: rgba($dark, 0.2);
+    top: 8px;
+    right: -2px;
+    transform: rotate(40deg);
+  }
+
+  &::after{
+    transform: rotate(-40deg);
+  }
+}
