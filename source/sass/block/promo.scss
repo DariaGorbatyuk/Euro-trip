@@ -74,8 +74,16 @@
 .promo__btn {
   margin-left: auto;
   margin-right: 141px;
+  width: 340px;
+  padding: 30px 40px;
+  justify-content: space-between;
 
   @media (max-width: $m-end) {
     margin: 0 auto;
+    width: 250px;
+    padding: 19px 40px 15px;
+  }
+  @media (max-width: $s-end) {
+    width: 288px
   }
 }
