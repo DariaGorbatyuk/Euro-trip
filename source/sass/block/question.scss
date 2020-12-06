@@ -9,6 +9,13 @@
     background-position: center;
     background-size: cover;
   }
+
+  @media (max-width: $s-end) {
+    background-image: none;
+    background-color: $light;
+    min-height: auto;
+    padding-bottom: 49px;
+  }
 }
 
 .question__box {
@@ -25,6 +32,14 @@
     width: 658px;
     margin: 70px auto 0;
   }
+
+  @media (max-width: $s-end) {
+    width: auto;
+    background-color: $light;
+    box-shadow: none;
+    margin-top: 49px;
+    padding: 0 15px;
+  }
 }
 
 .question__heading {
@@ -34,6 +49,10 @@
   text-align: center;
   margin-top: 0;
   margin-bottom: 13px;
+
+  @media (max-width: $s-end) {
+    margin-bottom: 20px;
+  }
 }
 
 .question__text {
@@ -43,7 +62,9 @@
   text-align: center;
   margin-top: 0;
   margin-bottom: 23px;
-
+  @media (max-width: $s-end) {
+    margin-bottom: 19px;
+  }
 }
 
 .question__form {
