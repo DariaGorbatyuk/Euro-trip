@@ -24,3 +24,12 @@
   font-style: normal;
   font-display: swap;
 }
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/montserrat-bold.woff2") format("woff2"),
+  url("../fonts/montserrat-bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}

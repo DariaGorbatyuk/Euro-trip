@@ -1,3 +1,7 @@
 .main__places{
-  margin-bottom: 240px;
+  margin-bottom: 238px;
+
+  @media (max-width: $m-end) {
+    margin-bottom: 113px;
+  }
 }

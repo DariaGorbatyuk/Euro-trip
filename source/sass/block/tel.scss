@@ -3,12 +3,7 @@
   font-size: 18px;
   line-height: 27px;
   color: $dark;
-  text-align: right;
-  padding-right: 23px;
   display: flex;
-  padding-left: 55px;
-  text-decoration: underline;
-  width: 303px;
 
   &::before {
     @include pseudo($pos: static);
@@ -19,6 +14,13 @@
   }
 
   @media (max-width: $m-end) {
-    display: none;
+    &::before {
+      display: none;
+    }
+
+    &--header {
+      display: none;
+    }
   }
+
 }
