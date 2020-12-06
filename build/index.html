@@ -289,9 +289,8 @@
     </div>
     <ul class="price__tariff-list">
       <li class="price__tariff-item tariff tariff--active  tariff--full">
-<!--   tariff--active     -->
+        <!--   tariff--active     -->
         <h3 class="tariff__heading">Комплексный<span class="tariff__price">$1999</span></h3>
-        <!--        Поменять знак доллара-->
         <p class="tariff__desc">Ознакомьтесь с перечнем того, что входит в данный пакет </p>
         <ul class="tariff__features-list">
           <li class="tariff__features__item">
@@ -342,6 +341,28 @@
       </li>
     </ul>
   </section>
+  <div class="container">
+    <section class="main__question question">
+      <div class="question__box">
+        <h2 class="question__heading">У Вас остались вопросы?</h2>
+        <p class="question__text">Оставьте свой номер или e-mail и мы свяжемся с Вами</p>
+        <form class="question__form form-question" action="https://echo.htmlacademy.ru" method="post">
+          <ul class="form-question__list">
+            <li class="form-question__item">
+              <label class="visually-hidden" for="tel">Номер телефона</label>
+              <input class="form-question__inp required" id="tel" name="tel" type="tel" placeholder="+7 Введите 10 цифр номера" required="">
+              <!--              Доделать-->
+            </li>
+            <li class="form-question__item">
+              <label class="visually-hidden" for="email">Почта</label>
+              <input class="form-question__inp form-question__inp--email" id="email" type="email" name="email" placeholder="E-mail">
+            </li>
+          </ul>
+          <button class="form-question__btn btn" type="submit">отправить</button>
+        </form>
+      </div>
+    </section>
+  </div>
 </main>
 <footer class="page__footer"></footer>
 </body>

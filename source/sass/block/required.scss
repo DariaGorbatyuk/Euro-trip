@@ -1,0 +1,6 @@
+.required {
+  @include square($width: 6px);
+  background-image: url("../img/icon-star.svg");
+  background-repeat: no-repeat;
+  background-position: 15px 9px;
+}

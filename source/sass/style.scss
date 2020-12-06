@@ -4,6 +4,7 @@
 @import "mixin";
 @import "block/visually-hidden";
 @import "block/container";
+@import "block/required";
 @import "block/page";
 @import "block/header";
 @import "block/toggle";
@@ -18,4 +19,6 @@
 @import "block/main";
 @import "block/price";
 @import "block/tariff";
+@import "block/question";
+@import "block/form-question";
 
