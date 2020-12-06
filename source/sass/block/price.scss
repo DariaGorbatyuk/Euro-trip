@@ -6,6 +6,9 @@
   @media (max-width: $m-end) {
     display: block;
   }
+  @media (max-width: $s-end) {
+
+  }
 }
 
 .price__layout-top {
@@ -17,6 +20,9 @@
     width: auto;
     padding: 0;
     margin-bottom: 29px;
+  }
+  @media (max-width: $s-end) {
+    margin-bottom: 37px;
   }
 }
 
@@ -48,6 +54,10 @@
       display: none;
     }
   }
+  @media (max-width: $s-end) {
+    font-size: 24px;
+    line-height: 150%;
+  }
 }
 
 .price__text {
@@ -61,6 +71,9 @@
   @media (max-width: $m-end) {
     text-align: center;
     margin-bottom: 32px;
+  }
+  @media (max-width: $s-end) {
+    margin-bottom: 18px;
   }
 }
 
@@ -96,6 +109,9 @@
     text-decoration-line: underline;
     justify-content: center;
   }
+  @media (max-width: $s-end) {
+
+  }
 }
 
 .price__tariff-list {
@@ -107,9 +123,13 @@
   flex-wrap: wrap;
   padding-left: 10px;
 
-  @media (max-width: $m-end){
+  @media (max-width: $m-end) {
     padding: 0 50px;
     justify-content: space-between;
+  }
+  @media (max-width: $s-end) {
+    padding: 0;
+    gap: 32px;
   }
 }
 
@@ -120,7 +140,10 @@
     margin-right: 0;
   }
 
-  @media (max-width: $m-end){
+  @media (max-width: $m-end) {
     margin-right: 0;
+  }
+  @media (max-width: $s-end) {
+
   }
 }
