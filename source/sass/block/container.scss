@@ -27,6 +27,9 @@
       padding-left: 37px;
       padding-right: 0;
     }
+    &--question{
+      padding: 0;
+    }
   }
 
   @media (max-width: $s-end) {

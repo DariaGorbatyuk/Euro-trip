@@ -4,6 +4,11 @@
   background-position: 24px 0;
   min-height: 455px;
   border-top: 1px solid transparent;
+
+  @media (max-width: $m-end) {
+    background-position: center;
+    background-size: cover;
+  }
 }
 
 .question__box {
@@ -15,6 +20,11 @@
   margin-left: auto;
   margin-top: 70px;
   padding: 49px;
+
+  @media (max-width: $m-end) {
+    width: 658px;
+    margin: 70px auto 0;
+  }
 }
 
 .question__heading {
@@ -33,6 +43,7 @@
   text-align: center;
   margin-top: 0;
   margin-bottom: 23px;
+
 }
 
 .question__form {

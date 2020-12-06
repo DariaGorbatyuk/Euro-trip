@@ -10,6 +10,10 @@
   flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 25px;
+
+  @media (max-width: $m-end) {
+    margin-bottom: 20px;
+  }
 }
 
 .form-question__item {
@@ -21,16 +25,30 @@
   position: relative;
   padding: 16px 15px 15px 24px;
   border: 1px solid rgba($dark-gray, 0.3);
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: $dark;
 
-  &--email{
+  &--email {
     padding-left: 14px;
   }
+
+  @media (max-width: $m-end) {
+
+  }
 }
-.form-question__btn{
+
+.form-question__btn {
   width: 176px;
   margin: 0 auto;
   color: $white;
   padding-top: 18px;
   padding-bottom: 17px;
 
+  @media (max-width: $m-end) {
+    width: 250px;
+    padding-top: 20px;
+    padding-bottom: 19px;
+  }
 }
