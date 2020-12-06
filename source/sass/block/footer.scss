@@ -1,0 +1,20 @@
+.footer{
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 60px;
+
+  @media (max-width: $m-end) {
+    padding-bottom: 50px;
+  }
+  @media (max-width: $s-end) {
+    text-align: center;
+    padding-bottom: 29px;
+  }
+}
+.footer-heading{
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 32px;
+  color: $dark;
+  margin-top: 0;
+}
