@@ -29,11 +29,26 @@
   margin-top: 0;
   padding-bottom: 13px;
   margin-bottom: 21px;
+  position: relative;
+
+  &::after{
+    @include pseudo();
+    @include size($width: 68px, $height: 1px);
+    background-color: $accent;
+    bottom: 1px;
+    left: 0;
+  }
 
   @media (max-width: $s-end) {
     font-size: 20px;
     line-height: 24px;
     text-align: center;
+
+    &:after{
+      left: 0;
+      right: 0;
+      margin: auto;
+    }
   }
 }
 

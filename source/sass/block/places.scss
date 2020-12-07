@@ -10,7 +10,7 @@
   @media (max-width: $s-end) {
     padding-top: 26px;
   }
-  @media (max-width: $s-end){
+  @media (max-width: $s-end) {
     margin-bottom: 5px;
   }
 }
@@ -25,6 +25,15 @@
   margin-top: 0;
   padding-bottom: 34px;
   margin-bottom: 32px;
+  position: relative;
+
+  &::after {
+    @include pseudo();
+    @include size($width: 228px, $height: 4px);
+    background-color: $accent;
+    bottom: 1px;
+    left: 0;
+  }
 
   @media (max-width: $m-end) {
     font-size: 30px;
@@ -34,6 +43,10 @@
     letter-spacing: 0;
     padding-bottom: 0;
     margin-bottom: 21px;
+
+    &::after{
+      display: none;
+    }
   }
   @media (max-width: $s-end) {
     font-size: 24px;
