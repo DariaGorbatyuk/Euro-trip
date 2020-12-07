@@ -5,15 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Путешествие по Европе</title>
   <link rel="stylesheet" href="css/style.min.css">
-
 </head>
+
 <body class="page__body">
-<div class="success">
-  <div class="success__box">
-    <button class="success__btn close" type="button"><span class="visually-hidden">Закрыть окно</span></button>
-    <p class="success__text">Форма успешно отправлена,<br> спасибо! :)</p>
-  </div>
-</div>
 <header class="page__header header container container--header header--closed ">
   <!-- header--no-js; header-closed; header--open -->
   <a class="header__logo">
@@ -394,6 +388,29 @@
       помогают поддерживать корпоративный дух, а также являются оличным времяпрепровождением</p>
   </section>
 </footer>
+
+<template id="purchase">
+  <div class="purchase">
+    <div class="purchase__box">
+      <button class="purchase__btn close" type="button"><span class="visually-hidden">Закрыть окно</span></button>
+      <h2 class="purchase__heading">Купить тур</h2>
+      <form action="https://echo.htmlacademy.ru" method="post" class="purchase__form form-question">
+        <ul class="form-question__list form-question__list--purchase">
+          <li class="form-question__item">
+            <label class="visually-hidden" for="tel-purchase">Номер телефона</label>
+            <input class="form-question__inp required" id="tel-purchase" name="tel" type="tel" placeholder="+7 Введите 10 цифр номера" required="">
+            <!--              Доделать-->
+          </li>
+          <li class="form-question__item">
+            <label class="visually-hidden" for="email-purchase">Почта</label>
+            <input class="form-question__inp form-question__inp--email" id="email-purchase" type="email" name="email" placeholder="E-mail">
+          </li>
+        </ul>
+        <button class="form-question__btn btn" type="submit">отправить</button>
+      </form>
+    </div>
+  </div>
+</template>
 
 <template id="success">
   <div class="success">

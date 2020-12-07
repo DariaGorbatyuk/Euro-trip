@@ -1,0 +1,47 @@
+.purchase {
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+  background-color: rgba($white, 0.6);
+}
+
+.purchase__box {
+  position: absolute;
+  top: 10vh;
+  margin: auto;
+  left: 0;
+  right: 0;
+  width: 728px;
+  background-color: $light;
+  background-image: url("../img/bought-trip.jpg");
+  background-position: 0;
+  background-repeat: no-repeat;
+  min-height: 444px;
+  padding: 72px 10px 10px 348px;
+
+  @media (max-width: $s-end) {
+    background-image: none;
+    width: 100%;
+    padding: 100px 16px 185px;
+    background-color: $white;
+    min-height: 568px;
+  }
+}
+
+.purchase__heading {
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 170%;
+  text-align: center;
+  color: $graphite;
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+.purchase__btn{
+  right: 19px;
+  top: 17px;
+}
