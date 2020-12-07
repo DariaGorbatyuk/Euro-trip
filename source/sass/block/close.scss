@@ -1,5 +1,5 @@
 .close{
-  @include square($width: 22px);
+  @include square($width: 30px);
   background-color: transparent;
   position: absolute;
   border: 0;
@@ -8,14 +8,14 @@
   &::after,
   &::before{
     @include pseudo();
-    @include size($width: 22px, $height: 1px);
+    @include size($width: 30px, $height: 1px);
     background-color: rgba($dark, 0.2);
-    top: 8px;
+    top: 12px;
     right: -2px;
-    transform: rotate(40deg);
+    transform: rotate(45deg);
   }
 
   &::after{
-    transform: rotate(-40deg);
+    transform: rotate(-45deg);
   }
 }

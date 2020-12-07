@@ -6,7 +6,7 @@
   bottom: 0;
   top: 0;
   margin: auto;
-  background-color: rgba($white, 0.9);
+  background-color: rgba($white, 0.6);
 }
 
 .success__box {
@@ -19,6 +19,7 @@
   right: 0;
   top: 20vh;
   min-height: 444px;
+  max-width: 728px;
 
   @media (max-width: $m-end){
     width: 100%;
@@ -27,8 +28,8 @@
 
 .success__btn {
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 18px;
+  right: 18px;
 }
 
 .success__text {
@@ -38,4 +39,8 @@
   text-align: center;
   color: $graphite;
   margin: auto;
+
+  @media (max-width: $s-end) {
+    font-size: 20px;
+  }
 }
