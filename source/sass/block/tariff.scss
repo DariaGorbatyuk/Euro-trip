@@ -128,8 +128,9 @@
 }
 
 .tariff__check {
-  padding-top: 5px;
-  padding-right: 8px;
+  flex-shrink: 0;
+  margin-right: 9px;
+  margin-top: 5px;
 }
 
 .tariff__btn {

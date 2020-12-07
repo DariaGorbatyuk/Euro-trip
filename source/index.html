@@ -8,29 +8,6 @@
 </head>
 
 <body class="page__body">
-<div class="purchase">
-  <div class="purchase__box">
-    <button class="purchase__btn close" type="button"><span class="visually-hidden">Закрыть окно</span></button>
-    <h2 class="purchase__heading">Купить тур</h2>
-    <form action="https://echo.htmlacademy.ru" method="post" class="purchase__form form-question">
-      <ul class="form-question__list form-question__list--purchase">
-        <li class="form-question__item">
-          <label class="visually-hidden" for="tel-purchase">Номер телефона</label>
-          <input class="form-question__inp required" id="tel-purchase" name="tel" type="tel"
-                 placeholder="+7 Введите 10 цифр номера"
-                 required>
-          <!--              Доделать-->
-        </li>
-        <li class="form-question__item">
-          <label class="visually-hidden" for="email-purchase">Почта</label>
-          <input class="form-question__inp form-question__inp--email" id="email-purchase" type="email" name="email"
-                 placeholder="E-mail">
-        </li>
-      </ul>
-      <button class="form-question__btn btn" type="submit">отправить</button>
-    </form>
-  </div>
-</div>
 <header class="page__header header container container--header header--closed ">
   <!-- header--no-js; header-closed; header--open -->
   <a class="header__logo">
@@ -52,7 +29,11 @@
       </li>
     </ul>
   </nav>
-  <a class="tel header__tel  tel--header" href="tel:+749978468446">+7 (499) -784-684-46</a>
+  <a class="tel header__tel  tel--header" href="tel:+749978468446">
+   <!-- <svg class="site-list__svg" width="18" height="18" aria-hidden="true">
+      <use xlink:href="img/sprite.svg#icon-search"></use>
+    </svg>-->
+    +7 (499) -784-684-46</a>
 </header>
 <main class="page__main main">
   <article class="main__promo promo container">
@@ -289,18 +270,27 @@
         <p class="tariff__desc">Ознакомьтесь с перечнем того, что входит в данный пакет </p>
         <ul class="tariff__features-list">
           <li class="tariff__features__item">
-            <img class="tariff__check" src="./img/icon-check.svg">
+            <svg class="tariff__check" width="22" height="22" aria-hidden="true">
+              <use xlink:href="img/sprite.svg#icon-check"></use>
+            </svg>
             Разработанный маршрут с гидом группы
           </li>
           <li class="tariff__features__item">
-            <img class="tariff__check" src="./img/icon-check.svg">Перелет, трансфер и проживание в отелях
+            <svg class="tariff__check" width="22" height="22" aria-hidden="true">
+              <use xlink:href="img/sprite.svg#icon-check"></use>
+            </svg>
+            Перелет, трансфер и проживание в отелях
           </li>
           <li class="tariff__features__item">
-            <img class="tariff__check" src="./img/icon-check.svg">
+            <svg class="tariff__check" width="22" height="22" aria-hidden="true">
+              <use xlink:href="img/sprite.svg#icon-check"></use>
+            </svg>
             Завтраки, ужины в отелях и ланчи на природе
           </li>
           <li class="tariff__features__item">
-            <img class="tariff__check" src="./img/icon-check.svg">
+            <svg class="tariff__check" width="22" height="22" aria-hidden="true">
+              <use xlink:href="img/sprite.svg#icon-check"></use>
+            </svg>
             Экскурсии по удивительно красивым местам Европы
           </li>
         </ul>
@@ -312,23 +302,33 @@
         <p class="tariff__desc">Ознакомьтесь с перечнем того, что входит в данный пакет </p>
         <ul class="tariff__features-list">
           <li class="tariff__features__item">
-            <img class="tariff__check" src="./img/icon-check.svg">
+            <svg class="tariff__check" width="22" height="22" aria-hidden="true">
+              <use xlink:href="img/sprite.svg#icon-check"></use>
+            </svg>
             Разработанный маршрут с гидом группы
           </li>
           <li class="tariff__features__item">
-            <img class="tariff__check" src="./img/icon-check.svg">
+            <svg class="tariff__check" width="22" height="22" aria-hidden="true">
+              <use xlink:href="img/sprite.svg#icon-check"></use>
+            </svg>
             Перелет и трансфер
           </li>
           <li class="tariff__features__item">
-            <img class="tariff__check" src="./img/icon-check.svg">
+            <svg class="tariff__check" width="22" height="22" aria-hidden="true">
+              <use xlink:href="img/sprite.svg#icon-check"></use>
+            </svg>
             Проживание в хостелах при отелях
           </li>
           <li class="tariff__features__item">
-            <img class="tariff__check" src="./img/icon-check.svg">
+            <svg class="tariff__check" width="22" height="22" aria-hidden="true">
+              <use xlink:href="img/sprite.svg#icon-check"></use>
+            </svg>
             Только завтраки в отелях
           </li>
           <li class="tariff__features__item">
-            <img class="tariff__check" src="./img/icon-check.svg">
+            <svg class="tariff__check" width="22" height="22"  aria-hidden="true">
+              <use xlink:href="img/sprite.svg#icon-check"></use>
+            </svg>
             Экскурсии по удивительно красивым местам Европы
           </li>
         </ul>
