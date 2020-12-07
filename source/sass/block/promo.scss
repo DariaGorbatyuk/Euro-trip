@@ -8,11 +8,19 @@
   padding-top: 186px;
   padding-bottom: 294px;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/bh-desk2x.jpg");
+  }
+
   @media (max-width: $m-end) {
     background-image: url("../img/bh-tabl.jpg");
     background-size: cover;
     padding-top: 60px;
     padding-bottom: 83px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/bh-tabl2x.jpg");
+    }
   }
 
   @media (max-width: $s-end) {
@@ -20,6 +28,10 @@
     background-size: 100% 235px;
     background-color: white;
     padding-top: 83px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/bh-m2x.jpg");
+    }
   }
 }
 

@@ -8,6 +8,29 @@
 </head>
 
 <body class="page__body">
+<div class="purchase">
+  <div class="purchase__box">
+    <button class="purchase__btn close" type="button"><span class="visually-hidden">Закрыть окно</span></button>
+    <h2 class="purchase__heading">Купить тур</h2>
+    <form action="https://echo.htmlacademy.ru" method="post" class="purchase__form form-question">
+      <ul class="form-question__list form-question__list--purchase">
+        <li class="form-question__item">
+          <label class="visually-hidden" for="tel-purchase">Номер телефона</label>
+          <input class="form-question__inp required" id="tel-purchase" name="tel" type="tel"
+                 placeholder="+7 Введите 10 цифр номера"
+                 required>
+          <!--              Доделать-->
+        </li>
+        <li class="form-question__item">
+          <label class="visually-hidden" for="email-purchase">Почта</label>
+          <input class="form-question__inp form-question__inp--email" id="email-purchase" type="email" name="email"
+                 placeholder="E-mail">
+        </li>
+      </ul>
+      <button class="form-question__btn btn" type="submit">отправить</button>
+    </form>
+  </div>
+</div>
 <header class="page__header header container container--header header--closed ">
   <!-- header--no-js; header-closed; header--open -->
   <a class="header__logo">
@@ -48,8 +71,8 @@
           <a href="" class="places__link">
             <figure class="places__figure">
               <picture>
-                <source media="(max-width: 1919px)" srcset="./img/greece-m.jpg">
-                <img src="./img/greece-big.jpg" alt="Скала и горы на заднем фоне" class="places__img"
+                <source media="(max-width: 1919px)" srcset="./img/greece-m.jpg 1x, ./img/greece-m2x.jpg 2x">
+                <img src="./img/greece-big.jpg" srcset="./img/greece-big2x.jpg" alt="Скала и горы на заднем фоне" class="places__img"
                      sizes="(max-width: 1919px) 288px, 350px">
               </picture>
               <figcaption class="places__text">Греция</figcaption>
@@ -60,8 +83,8 @@
           <a href="" class="places__link">
             <figure class="places__figure">
               <picture>
-                <source media="(max-width: 1919px)" srcset="./img/albania-m.jpg">
-                <img src="./img/albania-big.jpg" alt="Песчаный пляж" class="places__img"
+                <source media="(max-width: 1919px)" srcset="./img/albania-m.jpg 1x, ./img/albania-m2x.jpg 2x">
+                <img src="./img/albania-big.jpg" srcset="./img/albania-big2x.jpg 2x" alt="Песчаный пляж" class="places__img"
                      sizes="(max-width: 1919px) 288px, 350px">
               </picture>
               <figcaption class="places__text">Албания</figcaption>
@@ -72,8 +95,8 @@
           <a href="" class="places__link">
             <figure class="places__figure">
               <picture>
-                <source media="(max-width: 1919px)" srcset="./img/macedonia-m.jpg">
-                <img src="./img/macedonia-big.jpg" alt="Вид на архитектуру и океан" class="places__img"
+                <source media="(max-width: 1919px)" srcset="./img/macedonia-m.jpg 1x, ./img/macedonia-m2x.jpg 2x">
+                <img src="./img/macedonia-big.jpg" srcset="./img/macedonia-big2x.jpg 2x" alt="Вид на архитектуру и океан" class="places__img"
                      sizes="(max-width: 1919px) 288px, 350px">
               </picture>
               <figcaption class="places__text">Македония</figcaption>
@@ -84,8 +107,8 @@
           <a href="" class="places__link">
             <figure class="places__figure">
               <picture>
-                <source media="(max-width: 1919px)" srcset="./img/montenegro-m.jpg">
-                <img src="./img/montenegro-big.jpg" alt="Река с берегами в густой растительности" class="places__img"
+                <source media="(max-width: 1919px)" srcset="./img/montenegro-m.jpg 1x, ./img/montenegro-m2x.jpg 2x">
+                <img src="./img/montenegro-big.jpg" srcset="./img/montenegro-big2x.jpg 2x" alt="Река с берегами в густой растительности" class="places__img"
                      sizes="(max-width: 1919px) 288px, 350px">
               </picture>
               <figcaption class="places__text">Черногория</figcaption>
@@ -96,8 +119,8 @@
           <a href="" class="places__link">
             <figure class="places__figure">
               <picture>
-                <source media="(max-width: 1919px)" srcset="./img/croatia-m.jpg">
-                <img src="./img/croatia-big.jpg" alt="Озеро в пещере" class="places__img"
+                <source media="(max-width: 1919px)" srcset="./img/croatia-m.jpg 1x, ./img/croatia-m2x.jpg 2x">
+                <img src="./img/croatia-big.jpg" srcset="./img/croatia-big2x.jpg 2x" alt="Озеро в пещере" class="places__img"
                      sizes="(max-width: 1919px) 288px, 350px">
               </picture>
               <figcaption class="places__text">Хорватия</figcaption>
@@ -116,7 +139,7 @@
           <li class="tabs__item"><a class="tabs__link" href="">Хорватия</a></li>
         </ul>
       </div>
-      <article class="tabs__card card card--active container container--card" id="greece">
+      <article class="tabs__card card card--active  container container--card" id="greece">
         <div class="card__layout-top">
           <h3 class="card__heading">Греция</h3>
           <p class="card__text">На севере Греции находится один из крупнейших комплексов монастырей, расположенных на
@@ -128,12 +151,8 @@
           <a class="card__btn btn" href="#">купить тур сейчас</a>
         </div>
         <div class="card__layout-bottom">
-          <picture>
-            <source media="(max-width: 767px)" srcset="./img/greece-tab-m.jpg 1x, ./img/greece-tab-m2x.jpg 2x">
-            <source media="(max-width: 1919px)" srcset="./img/greece-tab-t.jpg 1x, ./img/greece-tab-t2x.jpg 2x">
-            <img class="card__img" src="./img/greece-tab-d.jpg" alt="Скала и горы на заднем фоне"
+            <img class="card__img" src="./img/greece-tab-d.jpg" srcset="./img/greece-tab-d2x.jpg 2x" alt="Скала и горы на заднем фоне"
                  sizes="(max-width: 1919px) 100%, 430px">
-          </picture>
           <div class="card__comment comment">
             <h4 class="comment__heading">Отзывы</h4>
             <blockquote class="comment__content">
@@ -161,12 +180,8 @@
           <a class="card__btn btn" href="#">купить тур сейчас</a>
         </div>
         <div class="card__layout-bottom">
-          <picture>
-            <source media="(max-width: 767px)" srcset="./img/greece-tab-m.jpg 1x, ./img/greece-tab-m2x.jpg 2x">
-            <source media="(max-width: 1919px)" srcset="./img/greece-tab-t.jpg 1x, ./img/greece-tab-t2x.jpg 2x">
-            <img class="card__img" src="./img/greece-tab-d.jpg" alt="Скала и горы на заднем фоне"
+            <img class="card__img" src="./img/albania-tab-d.jpg" srcset="./img/albania-tab-d2x.jpg 2x" alt="Скала и горы на заднем фоне"
                  sizes="(max-width: 1919px) 100%, 430px">
-          </picture>
           <div class="card__comment comment">
             <h4 class="comment__heading">Отзывы</h4>
             <blockquote class="comment__content">
@@ -181,7 +196,7 @@
           </div>
         </div>
       </article>
-      <article class="tabs__card card container container--card" id="macedonia">
+      <article class="tabs__card card  container container--card" id="macedonia">
         <div class="card__layout-top">
           <h3 class="card__heading">Македония</h3>
           <p class="card__text">В Македонии нашей целью будет посетить Палаошник,
@@ -191,12 +206,8 @@
           <a class="card__btn btn" href="#">купить тур сейчас</a>
         </div>
         <div class="card__layout-bottom">
-          <picture>
-            <source media="(max-width: 767px)" srcset="./img/greece-tab-m.jpg 1x, ./img/greece-tab-m2x.jpg 2x">
-            <source media="(max-width: 1919px)" srcset="./img/greece-tab-t.jpg 1x, ./img/greece-tab-t2x.jpg 2x">
-            <img class="card__img" src="./img/greece-tab-d.jpg" alt="Скала и горы на заднем фоне"
+            <img class="card__img" src="./img/macedonia-tab-d.jpg" srcset="./img/macedonia-tab-d2x.jpg 2x" alt="Скала и горы на заднем фоне"
                  sizes="(max-width: 1919px) 100%, 430px">
-          </picture>
           <div class="card__comment comment">
             <h4 class="comment__heading">Отзывы</h4>
             <blockquote class="comment__content">
@@ -212,7 +223,7 @@
           </div>
         </div>
       </article>
-      <article class="tabs__card card container container--card" id="montenegro">
+      <article class="tabs__card card  container container--card" id="montenegro">
         <div class="card__layout-top">
           <h3 class="card__heading">Черногория</h3>
           <p class="card__text">Черногория удивит нас самым большим в Европе каньоном реки Тара, который в некоторых
@@ -221,12 +232,8 @@
           <a class="card__btn btn" href="#">купить тур сейчас</a>
         </div>
         <div class="card__layout-bottom">
-          <picture>
-            <source media="(max-width: 767px)" srcset="./img/greece-tab-m.jpg 1x, ./img/greece-tab-m2x.jpg 2x">
-            <source media="(max-width: 1919px)" srcset="./img/greece-tab-t.jpg 1x, ./img/greece-tab-t2x.jpg 2x">
-            <img class="card__img" src="./img/greece-tab-d.jpg" alt="Скала и горы на заднем фоне"
+            <img class="card__img" src="./img/montenegro-tab-d.jpg" srcset="./img/montenegro-tab-d2x.jpg 2x" alt="Скала и горы на заднем фоне"
                  sizes="(max-width: 1919px) 100%, 430px">
-          </picture>
           <div class="card__comment comment">
             <h4 class="comment__heading">Отзывы</h4>
             <blockquote class="comment__content">
@@ -249,12 +256,8 @@
           <a class="card__btn btn" href="#">купить тур сейчас</a>
         </div>
         <div class="card__layout-bottom">
-          <picture>
-            <source media="(max-width: 767px)" srcset="./img/greece-tab-m.jpg 1x, ./img/greece-tab-m2x.jpg 2x">
-            <source media="(max-width: 1919px)" srcset="./img/greece-tab-t.jpg 1x, ./img/greece-tab-t2x.jpg 2x">
-            <img class="card__img" src="./img/greece-tab-d.jpg" alt="Скала и горы на заднем фоне"
+           <img class="card__img" src="./img/croatia-tab-d.jpg" srcset="./img/croatia-tab-d2x.jpg 2x" alt="Скала и горы на заднем фоне"
                  sizes="(max-width: 1919px) 100%, 430px">
-          </picture>
           <div class="card__comment comment">
             <h4 class="comment__heading">Отзывы</h4>
             <blockquote class="comment__content">
@@ -269,7 +272,6 @@
           </div>
         </div>
       </article>
-      <!--Доделать-->
     </div>
   </section>
   <section class="main__price price container">

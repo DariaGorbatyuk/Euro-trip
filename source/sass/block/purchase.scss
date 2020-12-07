@@ -18,10 +18,15 @@
   width: 728px;
   background-color: $light;
   background-image: url("../img/bought-trip.jpg");
+  background-size: 338px;
   background-position: 0;
   background-repeat: no-repeat;
   min-height: 444px;
   padding: 72px 10px 10px 348px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/bought-trip2x.jpg");
+  }
 
   @media (max-width: $s-end) {
     background-image: none;

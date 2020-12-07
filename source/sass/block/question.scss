@@ -5,6 +5,10 @@
   min-height: 455px;
   border-top: 1px solid transparent;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/bf2x.jpg");
+  }
+
   @media (max-width: $m-end) {
     background-position: center;
     background-size: cover;

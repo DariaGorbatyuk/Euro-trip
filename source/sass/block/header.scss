@@ -17,7 +17,6 @@
       flex-direction: column;
       align-items: flex-start;
     }
-    //justify-content: space-between;
   }
 }
 
@@ -26,7 +25,8 @@
   padding-left: 12px;
 
   @media (max-width: $m-end) {
-    padding: 18px 20px 14px 21px;
+    padding-top: 18px;
+    padding-left: 22px;
     display: block;
     width: 85px;
 
@@ -37,7 +37,7 @@
   }
 
   @media (max-width: $s-end) {
-    padding: 18px 20px 14px 17px
+    padding-left: 16px;
   }
 }
 .header__tel{

@@ -5,7 +5,7 @@
   padding-top: 80px;
   background-size: cover;
 
-  &--active{
+  &--active {
     display: flex;
   }
 
@@ -13,11 +13,11 @@
     background: none;
     padding-top: 33px;
 
-    &--active{
+    &--active {
       display: block;
     }
   }
-  @media (max-width: $s-end){
+  @media (max-width: $s-end) {
     padding-top: 25px;
   }
 }
@@ -30,7 +30,7 @@
     padding: 0;
     margin-bottom: 30px;
   }
-  @media (max-width: $s-end){
+  @media (max-width: $s-end) {
     margin-bottom: 50px;
   }
 }
@@ -47,7 +47,7 @@
   padding-top: 10px;
   position: relative;
 
-  &::after{
+  &::after {
     @include pseudo();
     @include size($width: 175px, $height: 3px);
     background-color: $accent;
@@ -64,11 +64,11 @@
     padding-bottom: 0;
     margin-bottom: 21px;
 
-    &::after{
+    &::after {
       display: none;
     }
   }
-  @media (max-width: $s-end){
+  @media (max-width: $s-end) {
     font-size: 24px;
     line-height: 150%;
   }
@@ -88,7 +88,7 @@
     margin-bottom: 18px;
     padding: 0 20px;
   }
-  @media (max-width: $s-end){
+  @media (max-width: $s-end) {
 
   }
 }
@@ -109,7 +109,7 @@
     letter-spacing: 2px;
     padding: 19px 50px;
   }
-  @media (max-width: $s-end){
+  @media (max-width: $s-end) {
     width: 288px;
     padding: 19px 69px;
   }
@@ -122,7 +122,7 @@
   @media (max-width: $m-end) {
     padding-right: 0;
   }
-  @media (max-width: $s-end){
+  @media (max-width: $s-end) {
     padding-bottom: 70px;
   }
 }
@@ -130,9 +130,6 @@
 .card__img {
   @media (max-width: $m-end) {
     width: 100%;
+    max-height: 415px;
   }
-}
-
-.card__comment {
-
 }
