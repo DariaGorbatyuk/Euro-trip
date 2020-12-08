@@ -91,6 +91,22 @@
   width: 350px;
   overflow: hidden;
   margin-bottom: 102px;
+  position: relative;
+
+  &:after{
+    @include pseudo();
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba($dark, 0.6);
+    opacity: 0;
+    z-index: 2;
+  }
+  &:hover:after,
+  &:focus:after{
+    opacity: 1;
+  }
 
   &:last-child,
   &:nth-child(3),
@@ -138,7 +154,29 @@
 }
 
 .places__link {
+  width: 266px;
+  border: 1px solid rgba($white, 0.7);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: $white;
+  position: absolute;
+  background-color: transparent;
+  display: none;
+  top: 177px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 3;
+  padding: 29px 23px;
 
+  .places__item:hover &,
+  .places__item:focus &{
+    display: block;
+  }
 }
 
 .places__figure {

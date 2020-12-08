@@ -22,10 +22,10 @@
     </button>
     <ul class="nav__list">
       <li class="nav__item">
-        <a class="nav__link link" href="#">О путешествии</a>
+        <a class="nav__link link" href="#places">О путешествии</a>
       </li>
       <li class="nav__item">
-        <a class="nav__link link" href="#">Цены</a>
+        <a class="nav__link link" href="#price">Цены</a>
       </li>
     </ul>
   </nav>
@@ -41,15 +41,14 @@
     <p class="promo__desc">В этом туре вы откроете для себя Европу в новом свете.
       Вас ждет: море, горы, а также потрясающая красота
       природы.</p>
-    <a class="promo__btn btn btn--arrow" href="#">смотреть тур</a>
+    <a class="promo__btn btn btn--arrow" href="#tabs">смотреть тур</a>
   </article>
-  <section class="main__places places">
+  <section class="main__places places" id="places">
     <div class="places__layout container container--places">
       <h2 class="places__heading">Места посещения</h2>
       <p class="places__desc">Вы можете выбрать полный тур или<br>частичный, с посещением первых 3 мест</p>
       <ul class="places__list">
         <li class="places__item">
-          <a href="" class="places__link">
             <figure class="places__figure">
               <picture>
                 <source media="(max-width: 1919px)" srcset="./img/greece-m.jpg 1x, ./img/greece-m2x.jpg 2x">
@@ -59,10 +58,10 @@
               </picture>
               <figcaption class="places__text">Греция</figcaption>
             </figure>
-          </a>
+          <a class="places__link" href="#greece">смотреть подробнее</a>
         </li>
         <li class="places__item">
-          <a href="" class="places__link">
+
             <figure class="places__figure">
               <picture>
                 <source media="(max-width: 1919px)" srcset="./img/albania-m.jpg 1x, ./img/albania-m2x.jpg 2x">
@@ -72,10 +71,9 @@
               </picture>
               <figcaption class="places__text">Албания</figcaption>
             </figure>
-          </a>
+          <a href="#albania" class="places__link">смотреть подробнее</a>
         </li>
         <li class="places__item">
-          <a href="" class="places__link">
             <figure class="places__figure">
               <picture>
                 <source media="(max-width: 1919px)" srcset="./img/macedonia-m.jpg 1x, ./img/macedonia-m2x.jpg 2x">
@@ -85,10 +83,10 @@
               </picture>
               <figcaption class="places__text">Македония</figcaption>
             </figure>
-          </a>
+          <a href="#macedonia" class="places__link">смотреть подробнее</a>
         </li>
         <li class="places__item">
-          <a href="" class="places__link">
+
             <figure class="places__figure">
               <picture>
                 <source media="(max-width: 1919px)" srcset="./img/montenegro-m.jpg 1x, ./img/montenegro-m2x.jpg 2x">
@@ -98,10 +96,10 @@
               </picture>
               <figcaption class="places__text">Черногория</figcaption>
             </figure>
-          </a>
+          <a href="#montenegro" class="places__link">смотреть подробнее</a>
         </li>
         <li class="places__item places__item--center">
-          <a href="" class="places__link">
+
             <figure class="places__figure">
               <picture>
                 <source media="(max-width: 1919px)" srcset="./img/croatia-m.jpg 1x, ./img/croatia-m2x.jpg 2x">
@@ -111,18 +109,18 @@
               </picture>
               <figcaption class="places__text">Хорватия</figcaption>
             </figure>
-          </a>
+          <a href="#croatia" class="places__link">смотреть подробнее</a>
         </li>
       </ul>
     </div>
-    <div class="places__tabs tabs">
+    <div class="places__tabs tabs" id="tabs">
       <div class="container container--tabs">
         <ul class="tabs__list">
           <li class="tabs__item"><a class="tabs__link tabs__link--active" href="#greece">Греция</a></li>
           <li class="tabs__item"><a class="tabs__link" href="#albania">Албания</a></li>
-          <li class="tabs__item"><a class="tabs__link" href="">Македония</a></li>
-          <li class="tabs__item"><a class="tabs__link" href="">Черногория</a></li>
-          <li class="tabs__item"><a class="tabs__link" href="">Хорватия</a></li>
+          <li class="tabs__item"><a class="tabs__link" href="#macedonia">Македония</a></li>
+          <li class="tabs__item"><a class="tabs__link" href="#montenegro">Черногория</a></li>
+          <li class="tabs__item"><a class="tabs__link" href="#croatia">Хорватия</a></li>
         </ul>
       </div>
       <article class="tabs__card card card--active  container container--card" id="greece">
@@ -265,7 +263,7 @@
       </article>
     </div>
   </section>
-  <section class="main__price price container">
+  <section class="main__price price container" id="price">
     <div class="price__layout-top">
       <h2 class="price__heading">Цены</h2>
       <p class="price__text">Специально для Вас мы разработали 2 пакета цен с разными условиями, отталкиваясь от Ваших
