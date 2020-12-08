@@ -24,6 +24,7 @@
     @include square($width: 16px);
     background-image: url("../img/icon-arrow-down.svg");
     background-repeat: no-repeat;
+    flex-shrink: 0;
   }
 
   @media (max-width: $m-end) {

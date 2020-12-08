@@ -12,6 +12,7 @@
   stroke: $footer-line;
   margin-top: 5px;
   margin-right: 15px;
+  flex-shrink: 0;
 
   .email:hover &,
   .email:focus &{

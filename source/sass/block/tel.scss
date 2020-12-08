@@ -17,6 +17,7 @@
 .tel__svg {
   fill: transparent;
   stroke: $dark;
+  flex-shrink: 0;
 
   .tel--header & {
     margin-right: 7px;
