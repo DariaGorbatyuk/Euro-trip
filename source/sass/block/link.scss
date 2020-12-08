@@ -1,0 +1,11 @@
+.link {
+  &:hover,
+  &:focus {
+    color: $accent;
+    outline: none;
+  }
+
+  &:active{
+    color: $hover;
+  }
+}

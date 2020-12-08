@@ -32,6 +32,14 @@
     margin-right: 11px;
   }
 
+  .tel:hover &,
+  .tel:focus &{
+    stroke: $accent;
+  }
+
+  .tel:active &{
+    stroke: $hover;
+  }
   @media (max-width: $m-end){
     .tel--price &{
       display: none;

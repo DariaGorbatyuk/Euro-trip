@@ -12,6 +12,14 @@
   stroke: $footer-line;
   margin-top: 5px;
   margin-right: 15px;
+
+  .email:hover &,
+  .email:focus &{
+    stroke: $accent;
+  }
+  .email:active &{
+    stroke: $hover;
+  }
 }
 
 .email__short {

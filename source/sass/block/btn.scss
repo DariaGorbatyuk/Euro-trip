@@ -13,7 +13,7 @@
   &--arrow::after{
     @include pseudo($pos: static);
     @include square($width: 16px);
-    background-image: url("../img/icon-arrowvg.svg");
+    background-image: url("../img/icon-arrow-down.svg");
     background-repeat: no-repeat;
   }
 
