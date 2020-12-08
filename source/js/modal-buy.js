@@ -3,6 +3,7 @@ const body = document.querySelector(`body`);
 const modalBuyTemplate = document.querySelector(`#purchase`).content.querySelector(`.purchase`);
 const newModalBuy = modalBuyTemplate.cloneNode(true);
 const successMessage = document.querySelector(`#success`).content.querySelector(`.success`);
+const questionForm = document.querySelector(`.question__form`);
 let close;
 
 const removeModal = (modal) => {
@@ -27,7 +28,14 @@ const onSubmit = (evt) => {
   document.addEventListener(`keydown`, onClose);
   document.addEventListener(`click`, onClose);
 }
-
+const onQuestionSubmit = (evt) => {
+  evt.preventDefault();
+  body.insertAdjacentElement(`afterbegin`, successMessage);
+  close = successMessage.querySelector(`.close`);
+  close.addEventListener(`click`, onClose);
+  document.addEventListener(`keydown`, onClose);
+  document.addEventListener(`click`, onClose);
+}
 
 const onBtnBuyClick = () => {
   body.insertAdjacentElement(`afterbegin`, newModalBuy);
@@ -39,4 +47,5 @@ const onBtnBuyClick = () => {
   formPurchase.addEventListener(`submit`, onSubmit)
 }
 
+questionForm.addEventListener(`submit`, onQuestionSubmit)
 btnBuy.forEach(btn => btn.addEventListener(`click`, onBtnBuyClick));
