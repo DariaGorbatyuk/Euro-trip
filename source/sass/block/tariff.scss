@@ -1,10 +1,12 @@
 .tariff {
-  width: 370px;
+  width: 372px;
   max-width: 370px;
   min-height: 672px;
   word-break: break-word;
   background: $white;
-  border: 1px solid rgba($dark-gray, 0.3);
+  border: 3px solid transparent;
+  box-shadow: 0 0 0 1px rgba($dark-gray, 0.3);
+  //border: 3px solid rgba($dark-gray, 0.3);
   border-radius: 6px;
   padding: 38px 30px 30px 28px;
   display: flex;
@@ -13,8 +15,9 @@
   &--active,
   &:hover,
   &:focus {
-    border: 1px solid transparent;
-    box-shadow: 0 0 0 3px $accent;
+    border: 3px solid $accent;
+    box-shadow: none;
+    //box-shadow: 0 0 0 3px $accent;
   }
 
   @media (max-width: $m-end) {
@@ -24,6 +27,7 @@
   }
   @media (max-width: $s-end) {
     min-height: 614px;
+    padding-top: 30px;
   }
 }
 
@@ -52,7 +56,7 @@
     flex-wrap: wrap;
     justify-content: center;
     padding: 0 10px;
-    margin-bottom: 12px;
+    margin-bottom: 11px;
   }
 }
 
@@ -115,7 +119,7 @@
   list-style: none;
 
   @media (max-width: $m-end) {
-    padding: 0 20px;
+    padding: 0 14px;
   }
   @media (max-width: $s-end) {
     margin-bottom: 28px;
@@ -158,11 +162,18 @@
 .tariff__btn {
   width: auto;
   color: $white;
-  padding: 30px 68px;
+  padding: 31px 50px 26px;
   margin-top: auto;
 
   @media (max-width: $m-end) {
-    padding: 18px 69px 15px;
+    padding: 22px 53px 15px;
+    margin-left: -3px;
+    margin-bottom: -3px;
+    width: 288px;
+  }
+
+  @media (max-width: $s-end) {
+    padding: 17px 53px 19px;
   }
 }
 

@@ -9,13 +9,13 @@
 }
 
 .main__places {
-  margin-bottom: 238px;
+  margin-bottom: 200px;
 
   @media (max-width: $m-end) {
-    margin-bottom: 113px;
+    margin-bottom: 93px;
   }
   @media (max-width: $s-end) {
-    margin-bottom: 41px;
+    margin-bottom: 21px;
   }
 }
 
@@ -27,7 +27,6 @@
   }
 
   @media (max-width: $s-end) {
-    margin-bottom: 53px;
+    margin-bottom: 50px;
   }
-
 }
