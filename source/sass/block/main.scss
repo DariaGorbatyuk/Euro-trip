@@ -21,9 +21,11 @@
 
 .main__price {
   margin-bottom: 137px;
+  margin-top: -500px;
 
   @media (max-width: $m-end) {
     margin-bottom: 125px;
+    margin-top: 0;
   }
 
   @media (max-width: $s-end) {

@@ -3,15 +3,22 @@
   background-image: url("../img/map.png");
   background-repeat: no-repeat;
   padding-top: 80px;
-  background-size: cover;
+  background-position-x: 240px;
+  background-position-y: 90px;
+  padding-bottom: 500px;
 
   &--active {
     display: flex;
   }
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/map2x.png");
+  }
+
   @media (max-width: $m-end) {
     background: none;
     padding-top: 33px;
+    padding-bottom: 0;
 
     &--active {
       display: block;
