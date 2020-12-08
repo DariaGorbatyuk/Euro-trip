@@ -7,6 +7,18 @@ const successMessage = document.querySelector(`#success`).content.querySelector(
 const questionForm = document.querySelector(`.question__form`);
 let close;
 
+let isStorageSupport = true;
+let storageSupportTel;
+let storageSupportEmail;
+
+try {
+  storageSupportTel = localStorage.getItem('tel');
+  storageSupportEmail = localStorage.getItem('email')
+} catch (err) {
+  isStorageSupport = false;
+}
+
+
 const removeModal = (modal) => {
   modal.remove();
   document.removeEventListener(`keydown`, onClose);
@@ -23,6 +35,10 @@ const onClose = (evt) => {
 const onSubmit = (evt) => {
   evt.preventDefault();
   if(newModalBuy){
+    if (isStorageSupport) {
+      localStorage.setItem('tel', newModalBuy.querySelector(`#tel-purchase`).value);
+      localStorage.setItem('email', newModalBuy.querySelector(`#email-purchase`).value);
+    }
     removeModal(newModalBuy);
   }
   body.insertAdjacentElement(`afterbegin`, successMessage);
@@ -34,7 +50,12 @@ const onSubmit = (evt) => {
 
 const onBtnBuyClick = () => {
   body.insertAdjacentElement(`afterbegin`, newModalBuy);
-  newModalBuy.querySelector(`#tel-purchase`).focus();
+  const tel = newModalBuy.querySelector(`#tel-purchase`).focus();
+  const email =  newModalBuy.querySelector(`#email-purchase`);
+  if (isStorageSupport && storageSupportTel !== null && storageSupportEmail !== null) {
+    tel.value = storageSupportTel;
+    email.value = storageSupportEmail;
+  }
   close = newModalBuy.querySelector(`.close`);
   close.addEventListener(`click`, onClose);
   document.addEventListener(`keydown`, onClose);
