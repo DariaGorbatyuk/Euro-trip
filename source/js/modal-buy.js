@@ -21,15 +21,9 @@ const onClose = (evt) => {
 }
 const onSubmit = (evt) => {
   evt.preventDefault();
-  removeModal(newModalBuy);
-  body.insertAdjacentElement(`afterbegin`, successMessage);
-  close = successMessage.querySelector(`.close`);
-  close.addEventListener(`click`, onClose);
-  document.addEventListener(`keydown`, onClose);
-  document.addEventListener(`click`, onClose);
-}
-const onQuestionSubmit = (evt) => {
-  evt.preventDefault();
+  if(newModalBuy){
+    removeModal(newModalBuy);
+  }
   body.insertAdjacentElement(`afterbegin`, successMessage);
   close = successMessage.querySelector(`.close`);
   close.addEventListener(`click`, onClose);
@@ -47,5 +41,5 @@ const onBtnBuyClick = () => {
   formPurchase.addEventListener(`submit`, onSubmit)
 }
 
-questionForm.addEventListener(`submit`, onQuestionSubmit)
+questionForm.addEventListener(`submit`, onSubmit)
 btnBuy.forEach(btn => btn.addEventListener(`click`, onBtnBuyClick));
