@@ -5,22 +5,36 @@
   color: $dark;
   display: flex;
 
-  &::before {
-    @include pseudo($pos: static);
-    @include square($width: 30px);
-    background-image: url("../img/icon-phone.svg");
-    background-repeat: no-repeat;
-    margin-right: 6px;
-  }
-
   @media (max-width: $m-end) {
-    &::before {
-      display: none;
-    }
 
     &--header {
       display: none;
     }
   }
 
+}
+
+.tel__svg {
+  fill: transparent;
+  stroke: $dark;
+
+  .tel--header & {
+    margin-right: 7px;
+  }
+
+  .tel--price & {
+    stroke: $accent;
+    margin-right: 16px;
+  }
+
+  .tel--footer & {
+    stroke: $footer-line;
+    margin-right: 11px;
+  }
+
+  @media (max-width: $m-end){
+    .tel--price &{
+      display: none;
+    }
+  }
 }
