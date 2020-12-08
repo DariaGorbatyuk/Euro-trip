@@ -10,6 +10,15 @@
   border: 0;
   justify-content: center;
 
+  &:hover,
+  &:focus{
+    background-color: $hover;
+    outline: none;
+  }
+  &:active{
+    opacity: 0.9;
+  }
+
   &--arrow::after{
     @include pseudo($pos: static);
     @include square($width: 16px);
