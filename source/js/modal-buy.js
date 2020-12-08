@@ -34,6 +34,7 @@ const onSubmit = (evt) => {
 
 const onBtnBuyClick = () => {
   body.insertAdjacentElement(`afterbegin`, newModalBuy);
+  newModalBuy.querySelector(`#tel-purchase`).focus();
   close = newModalBuy.querySelector(`.close`);
   close.addEventListener(`click`, onClose);
   document.addEventListener(`keydown`, onClose);
