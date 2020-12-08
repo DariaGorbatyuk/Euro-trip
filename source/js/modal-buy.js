@@ -1,3 +1,4 @@
+`use strict`
 const btnBuy = document.querySelectorAll(`.buy`);
 const body = document.querySelector(`body`);
 const modalBuyTemplate = document.querySelector(`#purchase`).content.querySelector(`.purchase`);
